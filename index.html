@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Table Generator</title>
+    <link rel="stylesheet" href="projectcom/style.css">
+</head>
+<body>
+    <style>
+        body{
+    width: 80%;
+    height: 400px; 
+            background-image: url('https://export-download.canva.com/bgZ3g/DAGPfcbgZ3g/1/0/0001-8200368263897675784.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240831%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240831T215616Z&X-Amz-Expires=34901&X-Amz-Signature=a77c63d4a1de82f00f5d2b84193675b12a434f9891597eb5ddd4a4a715cae239&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27%25E0%25B8%25AA%25E0%25B8%25B5%25E0%25B8%259F%25E0%25B9%2589%25E0%25B8%25B2%2520%25E0%25B8%25A0%25E0%25B8%25B2%25E0%25B8%259E%25E0%25B8%259B%25E0%25B8%25A3%25E0%25B8%25B0%25E0%25B8%2581%25E0%25B8%25AD%25E0%25B8%259A%25E0%25B8%25AA%25E0%25B8%25B5%25E0%25B8%2599%25E0%25B9%2589%25E0%25B8%25B3%2520%25E0%25B8%2597%25E0%25B8%25B0%25E0%25B9%2580%25E0%25B8%25A5%2520%25E0%25B8%2582%25E0%25B8%25AD%25E0%25B8%259A%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25B0%25E0%25B8%2594%25E0%25B8%25B2%25E0%25B8%25A9%2520%25E0%25B9%2580%25E0%25B8%25AD%25E0%25B8%2581%25E0%25B8%25AA%25E0%25B8%25B2%25E0%25B8%25A3%2520A4%2520%25E0%25B9%2581%25E0%25B8%2599%25E0%25B8%25A7%25E0%25B8%2599%25E0%25B8%25AD%25E0%25B8%2599.png&response-expires=Sun%2C%2001%20Sep%202024%2007%3A37%3A57%20GMT');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <div class="container-background">
+        <header>
+            <h1>หาค่าความจริงของตรรกศาสตร์</h1>
+            <p>ใส่นิพจน์เพื่อหาคำตอบ(เช่น p,q เป็นต้น).</p>
+            <p>คำแนะนำ && แทน เเละ
+                || แทน หรือ 
+                <= แทน ถ้า...เเล้ว 
+                ! แทน นิเสธ
+            </p>
+            
+        </header>
+        <main>
+            <form id="truthTableForm">
+                <label for="expression">:</label>
+                <input type="text" id="expression" name="expression" placeholder=" p ∧ q" required>
+                <button type="submit">หาผลลัพธ์</button>
+            </form>
+            <div id="truthTable"></div>
+        </main>
+        <footer>
+            <p>&copy; .</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

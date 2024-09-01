@@ -1,0 +1,7 @@
+body {
+  @import background-image: url('file:///C:/Users/Pawarisa/AppData/Local/Messenger/TamStorage/media_bank/AdvancedCrypto/100078274153211/persistent/att.3r5uD3EGKRQn6TJXT1sv68ethvm_k-MzNiBQQhklIIk.png');
+    background-size: cover; /* ขยายภาพเพื่อให้ครอบคลุมทั้งพื้นที่ */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ป้องกันการทำซ้ำภาพ */
+  }
+  
